@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">
+                <img src="./img/logo/logo.png" alt="Logo">
+                <div class="brand-text">
+                    <span class="name">Vietplant</span>
+                    <span class="slogan">garden.</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button href="" class=" btn-cart">
+                            Cart<span>(2)</span>
+                        </button>
+                        <sup><img src="./img/sup/Ellipse.png" alt="" class="sup"></sup>
+                    </li>
+                    <li class="nav-item dropdown navbar-icon">
+                        <i class="fa-solid fa-ellipsis-vertical dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                        </i>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item p-2" href="#">My Account</a></li>
+                            <li><a class="dropdown-item p-2" href="#">Wishlist</a></li>
+                            <li><a class="dropdown-item p-2" href="#">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="banner">
+        <div id="carouselBanner" class="carousel slide mb-5" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1" class="no-active"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="2" class="no-active"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <div class="container banner-content">
+                <p>House Plant,Office Plant</p>
+                <h1>Chakra Crystal Healing</h1>
+                <p>
+                    <span class="fw-bold fs-3 price">$350.00</span>
+                    <span class="text-decoration-line-through">$700.00</span>
+                </p>
+
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+
+            <!-- Carousel Items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/banner/banner1.jpg" class alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner/banner2.jpg" class="" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner/banner3.jpg" class="" alt="Slide 3">
+                </div>
+
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+            <div class="container">
+                <div class="icon-social">
+                    <i class="fa-brands fa-facebook p-2"></i>
+                    <i class="fa-brands fa-twitter p-2"></i>
+                    <i class="fa-brands fa-instagram  p-2"></i>
+                    <i class="fa-brands fa-youtube p-2"></i>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="News" class="bg-tertiary">
+        <div class="container news">
+            <h3 class="text-center">See What's New</h3>
+            <div class="row mt-3">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <img src="./img/anh_content/home7_1.png" alt="" class="img-fluid">
+                            <h5>Mehsulun adi</h5>
+                            <p>
+                                <span class="price">$8.00</span>
+                                <span class="text-decoration-line-through text-secondary">$12.00</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <img src="./img/anh_content/home7_2.png" alt="" class="img-fluid">
+                            <h5>Mehsulun adi</h5>
+                            <p>
+                                <span class="price">$8.00</span>
+                                <span class="text-decoration-line-through text-secondary">$12.00</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="position-relative">
+                                <img src="./img/anh_content/anh7.jpg" alt="" class="img-fluid big">
+                                <div class="content-big">
+                                    <h2 class="text-content">New Arrivals</h2>
+                                    <p class="text-color">Get your new plants now!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="position-relative">
+                                <img src="./img/anh_content/anh8.jpg" alt="" class="img-fluid big">
+                                <div class="content-big">
+                                    <h2 class="text-content">Featured Category
+                                    </h2>
+                                    <p class="text-color">Get your new plants now!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <img src="./img/anh_content/home7_3.png" alt="" class="img-fluid">
+                            <h5>Mehsulun adi</h5>
+                            <p>
+                                <span class="price">$8.00</span>
+                                <span class="text-decoration-line-through text-secondary">$12.00</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <img src="./img/anh_content/home7_4.png" alt="" class="img-fluid">
+                            <h5>Mehsulun adi</h5>
+                            <p>
+                                <span class="price">$8.00</span>
+                                <span class="text-decoration-line-through text-secondary">$12.00</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-center mt-5">Curent Events</h3>
+            <div class="row mt-5">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="position-relative">
+                        <img src="./img/anh_content/anh6.jpg" alt="">
+                        <div class="content-big">
+                            <h2 class="text-content">Get A Big-Dealt Combo!</h2>
+                            <p class="text-color">A set 4 plants start at $20.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="position-relative">
+                        <img src="./img/anh_content/anh5.jpg" alt="">
+                        <div class="content-big">
+                            <h2 class="text-content">Up Coming Events</h2>
+                            <p class="text-color">From 24-12-2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="banner-next" class="banner-next_2">
+        <img src="./img/banner/banner5.jpg" alt="ảnh nối">
+        <div class="content-banner container text-center text-uppercase">
+            <h2>Designed in New York, Made in Los Angeles, Delivered to Your door</h2>
+        </div>
+    </section>
+
+    <section id="News" class="bg-tertiary">
+        <div class="container news">
+            <h3 class="text-center">Our Team</h3>
+            <div class="row mt-5 shipping-row">
+                <div class="col-lg-3 col-md-6 col-sm-12 shipping">
+                    <div class="text-center">
+                        <i class="fa-solid fa-plane icon mt-3"></i>
+                        <h3 class="mt-3">FREE SHIPPING</h3>
+                        <h4 class="mt-2">ON ORDER OVER $500</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 shipping">
+                    <div class="text-center">
+                        <i class="fa-solid fa-question icon mt-3 icon"></i>
+                        <h3 class="mt-3">SUPPORT</h3>
+                        <h4 class="mt-2">ON ORDER OVER $500</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 shipping">
+                    <div class="text-center">
+                        <i class="fa-solid fa-credit-card icon mt-3"></i>
+                        <h3 class="mt-3">HELP PARTNER</h3>
+                        <h4 class="mt-2">ON ORDER OVER $500</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="text-center">
+                        <i class="fa-solid fa-phone icon mt-3"></i>
+                        <h3 class="mt-3">CONTACT WITH US</h3>
+                        <h4 class="mt-2">ON ORDER OVER $500</h4>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-center mt-5">Lastest Products</h3>
+            <div class="row mt-5">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="./img/product/plant_2_grande.png" alt="">
+                    <h3 class="name-product">House Shape Close</h3>
+                    <p>
+                        <span class="price">$8.00</span>
+                        <span class="text-decoration-line-through text-secondary">$12.00</span>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="./img/product/plant_3_grande.png" alt="">
+                    <h3 class="name-product">House Shape Close</h3>
+                    <p>
+                        <span class="price">$8.00</span>
+                        <span class="text-decoration-line-through text-secondary">$12.00</span>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="./img/product/plant_4_grande.png" alt="">
+                    <h3 class="name-product">House Shape Close</h3>
+                    <p>
+                        <span class="price">$8.00</span>
+                        <span class="text-decoration-line-through text-secondary">$12.00</span>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="./img/product/plant_5_grande.png" alt="">
+                    <h3 class="name-product">House Shape Close</h3>
+                    <p>
+                        <span class="price">$8.00</span>
+                        <span class="text-decoration-line-through text-secondary">$12.00</span>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="./img/product/plant_9_grande.png" alt="">
+                    <h3 class="name-product">House Shape Close</h3>
+                    <p>
+                        <span class="price">$8.00</span>
+                        <span class="text-decoration-line-through text-secondary">$12.00</span>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="./img/product/plant_11_grande.png" alt="">
+                    <h3 class="name-product">House Shape Close</h3>
+                    <p>
+                        <span class="price">$8.00</span>
+                        <span class="text-decoration-line-through text-secondary">$12.00</span>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="./img/product/plant_12_grande.png" alt="">
+                    <h3 class="name-product">House Shape Close</h3>
+                    <p>
+                        <span class="price">$8.00</span>
+                        <span class="text-decoration-line-through text-secondary">$12.00</span>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="./img/product/plant_16_grande.png" alt="">
+                    <h3 class="name-product">House Shape Close</h3>
+                    <p>
+                        <span class="price">$8.00</span>
+                        <span class="text-decoration-line-through text-secondary">$12.00</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <button class="btn">
+                    All Products
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="banner-next" class="banner-next_2">
+        <img src="./img/banner/banner6.jpg" alt="ảnh nối">
+        <div class="content-banner container text-center text-uppercase">
+            <h2>Designed in New York, Made in Los Angeles, Delivered to Your door</h2>
+        </div>
+    </section>
+
+
+    <section id="Services" class="bg-tertiary">
+        <div class="container services_content">
+            <h3 class="text-center mt-5">Our Services</h3>
+            <p class="text-center mt-3">Exceptur sint occaecat cupidatat non proident, suta culpa qui officia deserunt
+                mollit
+                anim id est laborum</p>
+
+            <div class="row mt-5 service py-5">
+                <div class="col-lg-4 col-md-6 col-sm-12 product2 ">
+                    <p class="mt-4 ">STANDART </p>
+                    <div class="text-center">
+                        <img class="img-fluid" src="./img/product/Group (1).png" alt="">
+                        <p>$39.99</p>
+                        <p>FIRST FEATURE</p>
+                        <p>SECOND FEATURE</p>
+                        <p>THIRD FEATURE</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 product2">
+                    <p class="mt-4">UNLIMITED</p>
+                    <div class="text-center">
+                        <img class="img-fluid" src="./img/product/Group (2).png" alt="">
+                        <p>$39.99</p>
+                        <p>FIRST FEATURE</p>
+                        <p>SECOND FEATURE</p>
+                        <p>THIRD FEATURE</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 product2">
+                    <p class="mt-4">EACH PACK INCLUDES</p>
+                    <div class="text-center mt-4">
+                        <p>FIRST FEATURE</p>
+                        <p>SECOND FEATURE</p>
+                        <p>THIRD FEATURE</p>
+                        <p>FOURTH FEATURE</p>
+                        <p>FIFTH FEATURE</p>
+                    </div>
+                    <div class="d-flex align-items-center icon-text mt-5">
+                        <div class="icon-user">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <span class="ms-3 text-start">
+                            <h4>Name Surname</h4>
+                            <p>Tilte & CEO Vietplant.</p>
+                        </span>
+
+                    </div>
+
+                    <p class="text-center mt-5">Natus error sit voluptartem accusantium doloremque laudantium, totam
+                        aperiam, eaque ipsa
+                        quae ab illo.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <h3>NEWSLETTER</h3>
+                <h3>TO GET IN TOUCH</h3>
+
+                <div class="mt-5">
+                    <input type="text" id="email" placeholder="Enter your email" class="mail">
+                </div>
+                <button class="btn-2">Subscribe</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer_content py-5">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="d-flex navbar-brand">
+                            <img src="./img/logo/logo (1).png" alt="">
+                            <p class="brand-text mt-3">
+                                <span>Vietplant</span>
+                                <span>garden.</span>
+                            </p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, mattis consectetuer adipiscing suspendisse et justo. Praesent mattis
+                            ugue.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <h2>Open Hours</h2>
+                        <p class="fw-bold">Monday: Closed</p>
+                        <p class="fw-bold">Tuesday - Friday:</p>
+                        <p class="text-secondary">7:00 AM - 9:00 PM</p>
+                        <p class="fw-bold">Saturday - Sunday:</p>
+                        <p class="text-secondary">11:00 AM - 10:00 PM</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <h2>Find Us</h2>
+                        <p><i class="fa-solid fa-location-dot p-2"></i> SomeUnknowInfomation.</p>
+                        <p><i class="fa-solid fa-phone p-2"></i> 4578 Marmora Road, Glasgow 89GR</p>
+                        <p><i class="fa-solid fa-envelope p-2"></i>info@vietplant.com</p>
+                        <p> <i class="fa-solid fa-phone p-2"></i> 987-654-3210</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="footer-bottom py-3">
+                <p class="text-center text-white">Copyright © 2018 Vietplant garden. | Powered by Azolia Inc.</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

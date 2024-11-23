@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1B1A17;
+}
+
+h6 {
+    color: #F0E3CA;
+}
+
+.btn {
+    background-color: #8bc34a;
+    color: white;
+    border: none;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: #80B435;
+}
+
+
+
+.navbar {
+    background-color: transparent;
+    margin: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    background-color: white;
+    width: 80%;
+    border-radius: 20px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: 500;
+}
+
+.cart .badge {
+    background-color: #8bc34a;
+    color: white;
+    margin-left: 5px;
+}
+
+.navbar-nav .nav-link,
+.nav-item i {
+    padding: 0 20px;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar i:hover {
+    color: #80B435;
+}
+
+.navbar i.active,
+.navbar .nav-link.active {
+    color: #80B435;
+}
+
+
+
+.nav-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+}
+
+.navbar .navbar-nav a {
+    padding: 20px;
+}
+
+
+.navbar-brand .brand-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.navbar-brand .brand-text .name {
+    font-weight: bold;
+}
+
+.navbar-brand .brand-text .slogan {
+    font-size: 12px;
+    color: #666;
+}
+
+
+
+
+
+.navbar-icon {
+    font-size: 20px;
+}
+
+.navbar-icon .dropdown-toggle::after {
+    display: none;
+}
+
+.navbar-icon.dropdown:hover .dropdown-menu {
+    display: block;
+    top: 75%;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.navbar-icon .dropdown-menu {
+    display: block;
+    /* Giữ block nhưng không hiện */
+    opacity: 0;
+    left: 1px;
+    visibility: hidden;
+    transform: translateY(1px);
+    transition: all 0.3s ease;
+    /* Hiệu ứng mượt */
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+    width: 100px;
+}
+
+.navbar-icon .dropdown-menu li {
+    list-style: none;
+    text-align: center;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 16px;
+    color: #1B1A17;
+}
+
+.navbar-icon .dropdown-menu .dropdown-item:hover {
+    background-color: #80B435;
+    color: white;
+    border-radius: 20px;
+}
+
+
+.btn-cart {
+    border-radius: 22px;
+    border: 2px solid rgba(196, 196, 196, 0.50);
+    height: 40px;
+    width: 100px;
+    font-weight: 500;
+}
+
+.btn-cart:hover {
+    background-color: #80B435;
+    color: white;
+}
+
+.sup {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+
+
+#banner {
+    position: relative;
+    width: 100%;
+    height: 850px;
+    /* Chiều cao của banner sẽ là chiều cao màn hình */
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 991px) {
+
+    body>nav>div>button:hover,
+    body>nav>div>button:focus {
+        background-color: #1d1d1d;
+    }
+
+    body>nav>div>button:hover #bar,
+    body>nav>div>button:focus #bar {
+        color: #fff;
+    }
+
+    .navbar .navbar-nav>ul {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: center;
+    }
+
+    .navbar .container {
+        width: 90%;
+        padding: 14px;
+    }
+
+    #navbarNav>ul>li:nth-child(n)>a {
+        padding: 10px 0;
+    }
+
+    #banner-next .content-banner {
+        margin-top: 20px;
+        width: 60%;
+    }
+
+    #banner-next .content-banner h2 {
+        font-size: 14px;
+    }
+}
+
+.carousel-inner {
+    height: 100%;
+    /* Đảm bảo carousel chiếm toàn bộ chiều cao của phần tử cha */
+}
+
+.carousel-item {
+    height: 100%;
+    /* Đảm bảo mỗi item trong carousel chiếm toàn bộ chiều cao */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    /* Đảm bảo ảnh chiếm toàn bộ chiều cao */
+    object-fit: cover;
+    /* Giúp ảnh phủ toàn bộ diện tích mà không bị biến dạng */
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+    text-align: left;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.icon-social {
+    position: absolute;
+    bottom: 150px;
+    /* Đặt cách dưới banner 20px */
+    left: 150px;
+    /* Đặt cách phải 20px */
+    z-index: 15;
+    /* Hiển thị trên ảnh */
+    color: white;
+    font-size: 24px;
+}
+
+.icon-social i {
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.icon-social i:hover {
+    color: #80B435;
+    /* Màu thay đổi khi hover */
+}
+
+.price {
+    color: #80B435;
+}
+
+#Store {
+    height: 100vh;
+}
+
+#carouselBanner {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.carousel-inner .carousel-item img {
+    width: 100%;
+    height: 850px;
+    /* Đảm bảo ảnh cao bằng chiều cao màn hình */
+    object-fit: cover;
+    /* Ảnh sẽ cắt đều để vừa khít */
+}
+
+/* Đảm bảo carousel-indicators cùng độ cao */
+.carousel-indicators {
+    bottom: 140px;
+    /* Điều chỉnh cùng độ cao với các nút điều khiển */
+
+}
+
+.carousel-indicators button {
+    width: 5px !important;
+    height: 5px !important;
+    border-radius: 50%;
+    /* Làm cho các button có hình tròn */
+    background-color: #bbb;
+    /* Màu nền mặc định */
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+    /* Thêm hiệu ứng chuyển màu nền và hiệu ứng phóng to */
+}
+
+
+/* Thay đổi màu sắc cho button đang hoạt động (active) */
+.carousel-indicators .active {
+    background-color: #dfaa23;
+    /* Màu nền cho button hiện tại */
+}
+
+
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.banner-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.banner-content .price {
+    color: #80B435;
+    /* Màu giá mới */
+}
+
+.btn-primary {
+    background-color: #80B435;
+    /* Màu nút */
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #66a12e;
+}
+
+
+#News .news {
+    position: relative;
+    margin-top: -60px;
+    /* Đẩy lên trên, đè lên section #banner */
+    z-index: 10;
+    /* Đảm bảo phần này nằm trên #banner */
+    background-color: white;
+    /* Đặt màu nền để nhìn rõ */
+    border-top-left-radius: 20px;
+    /* Bo góc nếu muốn */
+    border-top-right-radius: 20px;
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.1);
+    /* Tạo hiệu ứng nổi */
+    padding: 20px;
+}
+
+#News .news big img {
+    display: block;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1)
+}
+
+#News .news img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+
+#News .news .content-big {
+    position: absolute;
+    bottom: 20px;
+    /* Căn từ đáy ảnh lên 20px */
+    right: 20px;
+    /* Căn từ cạnh phải ảnh vào 20px */
+    color: white;
+    /* Chữ màu trắng để nổi bật */
+    padding: 10px 20px;
+    /* Khoảng cách nội dung bên trong */
+    border-radius: 8px;
+    /* Bo tròn các góc */
+    z-index: 2;
+    /* Đảm bảo nội dung nằm trên ảnh */
+}
+
+.position-relative {
+    position: relative;
+}
+
+.content-big h2 {
+    margin: 0;
+    font-size: 18px;
+    /* Tùy chỉnh kích thước chữ */
+    font-weight: bold;
+}
+
+.content-big p {
+    margin: 5px 0 0;
+    /* Khoảng cách phía trên và dưới */
+    font-size: 14px;
+}
+
+.text-color {
+    color: #80B435;
+}
+
+.text-content {
+    color: #FFF;
+    text-align: right;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#banner-next {
+    position: relative;
+}
+
+#banner-next img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-banner {
+    position: relative;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner-next .content-banner {
+    position: absolute;
+    /* Định vị nội dung dựa trên `#banner-next` */
+    top: 50%;
+    /* Đặt nội dung ở giữa theo chiều dọc */
+    left: 50%;
+    /* Đặt nội dung ở giữa theo chiều ngang */
+    transform: translate(-50%, -50%);
+    /* Căn chỉnh chính xác giữa */
+    color: white;
+    /* Màu chữ trắng để dễ đọc */
+    background: transparent;
+    /* Nền mờ để tăng độ tương phản */
+    padding: 20px;
+    border-radius: 10px;
+    /* Bo tròn góc nếu muốn */
+}
+
+.banner-next_2 {
+    position: relative;
+    z-index: 1;
+    margin-top: -40px;
+    /* Để Section 2 đè lên */
+}
+
+
+#News .news .icon {
+    color: #80B435;
+    font-size: 30px;
+}
+
+#News .news .shipping {
+    border-right: 1px solid #C4C4C4;
+}
+
+
+
+#News .news .name-product {
+    color: #222;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+#News .news .shipping-row{
+    
+}
+
+.icon-user{
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    padding: 10px;
+    color: #666;
+}
+
+
+.icon-text {
+    display: flex; /* Đặt container con hiển thị dạng flexbox */
+    align-items: center; /* Căn giữa icon và text theo chiều dọc */
+}
+
+.icon-text i {
+    font-size: 40px; /* Tùy chỉnh kích thước icon */
+}
+
+.icon-text span {
+    display: flex;
+    flex-direction: column; /* Căn text thành 2 dòng theo chiều dọc */
+}
+
+.icon-text span h4,
+.icon-text span p {
+    margin: 0; /* Bỏ khoảng cách mặc định của thẻ */
+}
+
+
+
+#Services .services_content{
+    position: relative;
+    z-index: 10;
+    margin-top: -40px;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+
+
+
+#Services .services_content img{
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#Services .service .product2{
+    border-radius: 20px;
+    border: 1px solid #C4C4C4;
+}
+
+.mail{
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.btn-2{
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid #C4C4C4;
+    padding: 10px;
+    width: 140px;
+}
+
+#footer{
+    background-color: #222222;
+}
+
+
+#footer .container{
+    background-color: #222222;
+    color: white;
+}
+
+.footer-bottom{
+    border-top: 1px solid #C4C4C4;
+}
