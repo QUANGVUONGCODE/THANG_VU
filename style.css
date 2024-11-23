@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    background-color: #ddd;
 }
 
 h1 {
@@ -538,20 +539,19 @@ h6 {
 }
 
 .icon-user{
-    background-color: #C4C4C4;
+    background-color: #C4C4C480;
     border-radius: 50%;
     padding: 10px;
-    color: #666;
+    color: #000;
 }
 
 
 .icon-text {
     display: flex; /* Đặt container con hiển thị dạng flexbox */
-    align-items: center; /* Căn giữa icon và text theo chiều dọc */
 }
 
 .icon-text i {
-    font-size: 40px; /* Tùy chỉnh kích thước icon */
+    font-size: 18px; /* Tùy chỉnh kích thước icon */
 }
 
 .icon-text span {
@@ -562,7 +562,27 @@ h6 {
 .icon-text span h4,
 .icon-text span p {
     margin: 0; /* Bỏ khoảng cách mặc định của thẻ */
+    color: #000;
 }
+.icon-text span h4{
+    font-size: 14px;
+    
+}
+.icon-text span p{
+    font-size: 12px;
+}
+.icon-user{
+    position: relative;
+    width: 45px;
+    height: 45px;
+}
+.icon-user i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 
 
@@ -581,15 +601,12 @@ h6 {
 
 
 #Services .services_content img{
-    width: 150px;
+    width: 200px;
     height: 200px;
     object-fit: cover;
 }
 
-#Services .service .product2{
-    border-radius: 20px;
-    border: 1px solid #C4C4C4;
-}
+
 
 .mail{
     padding: 10px;

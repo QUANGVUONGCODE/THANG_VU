@@ -1,0 +1,103 @@
+#News .title {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+}
+#News .sub-title {
+    color: #9B9B9B;
+    font-weight: 600;
+    font-size: 11px;
+}
+/* product */
+.product-group h3{
+    font-size: 24px;
+    font-weight: 500;
+}
+.product-group .product{
+    border-radius: 10px;
+    box-shadow: 0px 1px 1px 0px rgba(10, 16, 34, 0.20);
+    margin-bottom: 10px;
+}
+.product-group .product .price{
+    color: #8EB63E;
+    font-size: 18px;
+    font-weight: 500;
+}
+.product-group .product .old-price{
+    font-size: 14px;
+    color: #9B9B9B;
+}
+.product-group .product:hover{
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 30px 0px rgba(10, 16, 34, 0.20);
+}
+/* services */
+#Services .service-group .service-type{
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 1px 1px 0px rgba(10, 16, 34, 0.20);
+    margin: 5px;
+    height: 676px;
+}
+#Services .service-group .service-type:hover{
+    transition: all 0.3s ease-in-out;
+    background: #DEFBA5;
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 30px 0px rgba(10, 16, 34, 0.20);
+}
+#Services .service-group .service-type .class{
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+#Services .service-group .service-type .service-price{
+    font-size: 48px;
+    font-weight: 700;
+    color: #222 ;
+}
+#Services .service-group .service-type i{
+    margin-right: 10px;
+}
+#Services .service-group .service-type .pack{
+    justify-content: center;
+}
+#Services .service-group .service-type .content{
+    font-size: 14px;
+    color: #000;
+}
+
+/* contact */
+.contact h3{
+    font-size: 24px;
+    font-weight: 500;
+}
+.contact input{
+    color: #D4D4D4;
+    text-align: center;
+    font-size: 36px;
+}
+.contact button{
+    border-radius: 10px;
+    border: 2px solid #9B9B9B;
+    font-size: 24px;
+    color: #9B9B9B;
+}
+@media only screen and (max-width: 991px){
+    .contact input{
+        font-size: 18px;
+}
+    .contact button{
+        font-size: 18px;
+    }
+}
+#about-us .slogan{
+    background-image: url(./img/content-container.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#about-us .slogan h2{
+    font-size: 60px;
+    color: #FFF;
+}
