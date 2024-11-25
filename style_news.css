@@ -47,11 +47,11 @@
     flex-wrap: wrap;
 }
 
-.custom-row .first {
+.first {
     order: 2;
 }
 
-.custom-row .second {
+.second {
     order: 1;
 }
 
@@ -78,10 +78,10 @@
 }
 
 @media (min-width: 768px) {
-    .custom-row .first {
+    .first {
         order: 1;
     }
-    .custom-row .second {
+    .second {
         order: 2;
     }
 }
