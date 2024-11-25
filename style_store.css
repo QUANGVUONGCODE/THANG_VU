@@ -1,0 +1,167 @@
+#banner1 .banner-1 {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#banner1 .banner-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-content-1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: transparent;
+    color: white;
+    font-size: 70px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+#product1 .product-section--1 {
+    position: relative;
+    margin-top: -50px;
+    background-color: #F9F9F9;
+    border-radius: 20px;
+    z-index: 10;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#product1 .product-section--1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+#product1 .product-section--1 p {
+    color: #000;
+    text-align: center;
+    font-family: Dosis;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+#product1  .product-section--content {
+    position: absolute;
+    bottom: 20px;
+    padding-left: 20px;
+    z-index: 2;
+}
+
+#product1 .product-section--1 .product-section--content h3 {
+    color: #FFF;
+    font-family: Dosis;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#product1 .product-section--1 .product-section--content h5 {
+    color: #8EB63E;
+    text-align: right;
+    font-family: Dosis;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.product-section--item{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out
+}
+
+.product-section--item:hover{
+    transform: translateY(-5px); /* Nâng button lên 5px khi hover */
+}
+
+.btn-3{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #c4c4c4;
+    color: #5c5b5b;
+    border-radius: 10px;
+}
+.form-select:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #ccc; /* Màu viền tùy chỉnh */
+
+}
+option{
+    
+}
+
+.pagination{
+    justify-content: right;
+}
+
+
+.pagination .page-item.active .page-link {
+    background-color: transparent;
+    border: none; 
+    color: #8EB63E; 
+}
+
+/* Xóa viền xanh khi nhấn vào (focus) */
+.pagination .page-link:focus {
+    outline: none; 
+    box-shadow: none;
+}
+
+/* Xóa màu xanh khi hover */
+.pagination .page-link:hover {
+    background-color: transparent;
+    color: #8EB63E; 
+    border: none; 
+}
+
+/* Xóa viền bao quanh mặc định */
+.pagination .page-link {
+    border: none; /* Xóa viền */
+    background-color: transparent;
+    color: #5c5b5b;
+}
+
+#product1 h3{
+    margin-top: 20px;
+}
+
+
+ul li a{
+    text-decoration: none;
+    color: #4B4B4B;
+}
+
+.active{
+    color: #8EB63E;
+}
+
+ul li a:hover{
+    color: #8EB63E;
+}
+
+ul li{
+    padding: 5px;
+}
+
+hr{
+    width: 40%;
+    border: 2px solid #83bb12;
+}
+.unstyled-list{
+    list-style-type: none;
+}
