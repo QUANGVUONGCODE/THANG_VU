@@ -2,9 +2,11 @@
     position: relative;
     z-index: 10;
     margin-top: -40px;
-    background-color: white;
     border-radius: 20px;
     box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.1);
+    background-image: url(./img/about-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* .about-content{
@@ -22,31 +24,34 @@
 
 .about .img-content {
     position: absolute;
-    /* Định vị phần tử so với cha */
     top: 40%;
-    /* Căn dọc giữa */
     left: 50%;
-    /* Căn ngang giữa */
     transform: translate(-50%, -50%);
-    /* Đưa phần tử về chính giữa */
     color: white;
-    /* Màu chữ trắng */
     font-size: 2rem;
-    /* Tăng kích thước chữ */
-    font-weight: bold;
-    /* Chữ đậm */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    /* Tạo bóng cho chữ để dễ đọc hơn */
+    font-weight: 600;
     padding: 10px;
-    /* Khoảng cách bên trong cho chữ */
     z-index: 2;
-    /* Đảm bảo văn bản nằm trên ảnh */
+}
+.img-content-2 {
+    box-shadow: 0px 1px 1px 0px rgba(10, 16, 34, 0.20);
+    border-radius: 10px;
+    background: #FFF;
 }
 
-.fs-4 {
+#about  .fs-2 {
     color: #80B435;
+    font-family: dosis;
 }
 
+.fs-1 {
+    color: #222;
+    font-family: Dosis;
+    font-weight: 600;
+}
+.fs-3, p {
+    font-family: dosis;
+}
 
 
 .profile-card {
@@ -82,44 +87,66 @@
     color: #666;
 }
 
-.logo-marquee {
+
+
+
+.logo-swiper {
+    width: 70%;
+    height: 100px;
+    padding: 20px 0; 
     overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    background-color: transparent;
+    display: flex;
+    align-items: center;
 }
 
-/* Moving content */
-.logo-marquee-track {
-    display: inline-block;
-    white-space: nowrap;
-    animation: marquee 10s linear infinite;
+.logo-swiper .swiper-wrapper {
+    display: flex;
+    align-items: center;
 }
 
-/* Style for each logo */
-.logo-marquee img {
-    display: inline-block;
-    margin: 0 15px;
-    max-height: 100px;
-    transition: transform 0.3s ease;
-    filter: grayscale(100%);
+.logo-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.logo-marquee img:hover {
-    transform: scale(1.1);
-    filter: grayscale(0%);
+.logo-swiper .swiper-slide img {
+    width: 160px;
+    height: 80px; /* Adjust logo size */
+    object-fit: contain;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-/* Keyframes for animation */
-@keyframes marquee {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 250px; 
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff; /* Arrow color */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.swiper-button-prev {
+    left: 30px; /* Adjust distance from left edge */
+}
+
+.swiper-button-next {
+    right: 30px; /* Adjust distance from right edge */
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 16px; /* Arrow size */
+}
+
+
 
 
 
