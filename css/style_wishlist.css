@@ -75,10 +75,15 @@
 }
 
 .add-to-cart.disabled {
-    background-color: #d3d3d3;
+    background-color: #73811D8A;
     cursor: not-allowed;
 }
 
 .fs-5{
     color: #5da839;
+}
+.icon-container{
+    color: #9B9B9B;
+font-size: 24px;
+font-weight: 400;
 }

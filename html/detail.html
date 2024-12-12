@@ -13,17 +13,16 @@
         integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style1.css">
-    <link rel="stylesheet" href="style_store.css">
-    <link rel="stylesheet" href="style_detail.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style1.css">
+    <link rel="stylesheet" href="/css/style_detail.css">
 </head>
 
-<body>
+<body style="font-family: dosis;">
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="home.html">
-                <img src="./img/logo/logo.png" alt="Logo">
+                <img src="/img/logo/logo.png" alt="Logo">
                 <div class="brand-text">
                     <span class="name">Vietplant</span>
                     <span class="slogan">garden.</span>
@@ -42,27 +41,27 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pages</a>
+                        <a class="nav-link" href="page.html">Pages</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="news.html">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-                    <li class="nav-item">
-                        <button href="" class=" btn-cart">
+                    <li class="nav-item">   
+                        <button onclick="window.location.href = 'cart.html';" class=" btn-cart">
                             Cart<span>(2)</span>
                         </button>
-                        <sup><img src="./img/sup/Ellipse.png" alt="" class="sup"></sup>
+                        <sup><img src="/img/sup/Ellipse.png" alt="" class="sup"></sup>
                     </li>
                     <li class="nav-item dropdown navbar-icon">
                         <i class="fa-solid fa-ellipsis-vertical dropdown-toggle" data-bs-toggle="dropdown"
                             aria-expanded="false">
                         </i>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item p-2" href="#">My Account</a></li>
-                            <li><a class="dropdown-item p-2" href="#">Wishlist</a></li>
+                            <li><a class="dropdown-item p-2" href="account.html">My Account</a></li>
+                            <li><a class="dropdown-item p-2" href="wishlist.html">Wishlist</a></li>
                             <li><a class="dropdown-item p-2" href="#">Log Out</a></li>
                         </ul>
                     </li>
@@ -76,27 +75,40 @@
     </section>
 
     <section id="detail">
-        <div class="container sproduct ">
-            <h4>Home/Store/Office Plants/ Aviva In Brunie Mand</h4>
+        <div class="container sproduct">
+            <h4>
+                Home/Store/Office Plants/
+                <span class="active-page">Aviva In Brunie Mand</span>
+            </h4>
             <div class="row">
-                <div class="col-lg-5 col-md-6 col-sm-12">
-                    <img src="./img/product/plant_3_grande.png" alt="" class="img-fluid w-100">
-                    <div class="small-img-group pt-2">
-                        <div class="small-img-col">
-                            <img src="./img/product/plant_3_grande.png" width="100%" alt="" class="small-img">
+                <!-- Product Images -->
+                <div class="product-detail-img col-lg-7 col-md-7 col-sm-12 d-flex flex-column flex-md-row ">
+                    <!-- Small Images -->
+                    <div class="small-img-group col-lg-2 col-md-2 col-sm-12  d-flex flex-wrap">
+                        <div class="small-img-col mb-2">
+                            <img src="/img/product/plant_3_grande.png" alt="Small Image 1" class="img-fluid small-img">
+                        </div>
+                        <div class="small-img-col mb-2">
+                            <img src="/img/product/plant_3_grande.png" alt="Small Image 2" class="img-fluid small-img">
+                        </div>
+                        <div class="small-img-col mb-2">
+                            <img src="/img/product/plant_3_grande.png" alt="Small Image 3" class="img-fluid small-img">
+                        </div>
+                        <div class="small-img-col mb-2">
+                            <img src="/img/product/plant_3_grande.png" alt="Small Image 4" class="img-fluid small-img">
                         </div>
                         <div class="small-img-col">
-                            <img src="./img/product/plant_3_grande.png" width="100%" alt="" class="small-img">
-                        </div>
-                        <div class="small-img-col">
-                            <img src="./img/product/plant_3_grande.png" width="100%" alt="" class="small-img">
-                        </div>
-                        <div class="small-img-col">
-                            <img src="./img/product/plant_3_grande.png" width="100%" alt="" class="small-img">
+                            <img src="/img/product/plant_3_grande.png" alt="Small Image 5" class="img-fluid small-img">
                         </div>
                     </div>
+                    <!-- Big Image -->
+                    <div class="big-img col-lg-10 col-md-10 col-sm-12 text-align-center">
+                        <img src="/img/product/plant_3_grande.png" alt="Main Product Image" class="img-fluid w-100">
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 ">
+
+                <!-- Product Details -->
+                <div class="col-lg-5 col-md-5 col-sm-12 mt-3 mt-md-0">
                     <h3>Aviva In Bruine Mand</h3>
                     <div class="star mt-3">
                         <i class="fa-solid fa-star"></i>
@@ -136,23 +148,52 @@
                             </div>
                         </div>
                     </div>
-
-                    <button class="btn mt-4">Add To Cart</button>
-                    <button class="btn mt-4 "><i class="fa-solid fa-heart"></i></button>
-
+                    <button class="btn btn-primary mt-4">Add To Cart</button>
+                    <button class="btn btn-secondary mt-4">
+                        <i class="fa-solid fa-heart"></i>
+                    </button>
                     <div class="mt-5">
-                        <span class="label">DESCRIPTION</span>
+                        <div class="description-header d-flex align-items-center justify-content-between"> <span
+                                class="title">Description</span> <button class="toggle-btn"
+                                onclick="toggleDescription()"><i class="fa fa-caret-right"></i></button> </div>
                         <hr class="hr-2">
-                        <p class="text-secondary">
-                            Lorem ipsum dolor sit amet, mattis consectetuer adipiscing suspendisse et justo. Praesent
-                            mattis ugue. When an unknown printer took a galley of type and scrambled it to make a type
-                            specimen book. It has survived not only five centuries, but also the leap into electronic
-                        </p>
+                        <p class="text-secondary description-content"> Lorem ipsum dolor sit amet, mattis consectetuer
+                            adipiscing suspendisse et justo. Praesent mattis ugue. When an unknown printer took a galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic. </p>
+                    </div>
+                    <div class="mt-5">
+                        <div class="description-header d-flex align-items-center justify-content-between"> <span
+                                class="title1">Custom Tab</span> <button class="toggle-btn-1"
+                                onclick="toggleDescription1()"><i class="fa fa-caret-right"></i></button> </div>
+                        <hr class="hr-2">
+                        <p class="text-secondary description-content1"> Lorem ipsum dolor sit amet, mattis consectetuer
+                            adipiscing suspendisse et justo. Praesent mattis ugue. When an unknown printer took a galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic. </p>
+                    </div>
+                    <div class="mt-5">
+                        <div class="description-header d-flex align-items-center justify-content-between"> <span
+                                class="title2">Reviews</span> <button class="toggle-btn-2"
+                                onclick="toggleDescription2()"><i class="fa fa-caret-right "></i></button> </div>
+                        <hr class="hr-2">
+                        <p class="text-secondary description-content2"> Lorem ipsum dolor sit amet, mattis consectetuer
+                            adipiscing suspendisse et justo. Praesent mattis ugue. When an unknown printer took a galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic. </p>
+                    </div>
+                    <div class="mt-5">
+                        <p>Share this : <i class="fa-brands fa-square-twitter mx-2"></i> <i
+                                class="fa-brands fa-square-pinterest mx-2"></i> <i
+                                class="fa-brands fa-square-google-plus mx-2"></i> <i
+                                class="fa-brands fa-square-facebook mx-2"></i></p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
 
     <section id="product2" class="mt-5">
         <div class="container product-detail py-5">
@@ -160,7 +201,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-12 my-5">
                     <div class="product p-2">
-                        <img src="./img/product/plant_2_grande.png" alt="Ảnh 1">
+                        <img src="/img/product/plant_2_grande.png" alt="Ảnh 1">
                         <h3 class="">House Shape Close</h3>
                         <div>
                             <span class="price">$8.00</span>
@@ -170,7 +211,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 my-5">
                     <div onclick="window.location.href='detail.html'" class="product p-2">
-                        <img src="./img/product/plant_3_grande.png" alt="Ảnh 1">
+                        <img src="/img/product/plant_3_grande.png" alt="Ảnh 1">
                         <h3 class="">House Shape Close</h3>
                         <div>
                             <span class="price">$8.00</span>
@@ -180,7 +221,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 my-5">
                     <div class="product p-2">
-                        <img src="./img/product/plant_4_grande.png" alt="Ảnh 1">
+                        <img src="/img/product/plant_4_grande.png" alt="Ảnh 1">
                         <h3 class="">House Shape Close</h3>
                         <div>
                             <span class="price">$8.00</span>
@@ -190,7 +231,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 my-5">
                     <div class="product p-2">
-                        <img src="./img/product/plant_5_grande.png" alt="Ảnh 1">
+                        <img src="/img/product/plant_5_grande.png" alt="Ảnh 1">
                         <h3 class="">House Shape Close</h3>
                         <div>
                             <span class="price">$8.00</span>
@@ -198,20 +239,10 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-3 col-md-6 col-sm-12 my-5">
                     <div class="product p-2">
-                        <img src="./img/product/plant_5_grande.png" alt="Ảnh 1">
-                        <h3 class="">House Shape Close</h3>
-                        <div>
-                            <span class="price">$8.00</span>
-                            <span class="old-price text-decoration-line-through text-secondary">$12.00</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 my-5">
-                    <div class="product p-2">
-                        <img src="./img/product/plant_5_grande.png" alt="Ảnh 1">
+                        <img src="/img/product/plant_5_grande.png" alt="Ảnh 1">
                         <h3 class="">House Shape Close</h3>
                         <div>
                             <span class="price">$8.00</span>
@@ -221,7 +252,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 my-5">
                     <div class="product p-2">
-                        <img src="./img/product/plant_5_grande.png" alt="Ảnh 1">
+                        <img src="/img/product/plant_5_grande.png" alt="Ảnh 1">
                         <h3 class="">House Shape Close</h3>
                         <div>
                             <span class="price">$8.00</span>
@@ -231,7 +262,17 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 my-5">
                     <div class="product p-2">
-                        <img src="./img/product/plant_5_grande.png" alt="Ảnh 1">
+                        <img src="/img/product/plant_5_grande.png" alt="Ảnh 1">
+                        <h3 class="">House Shape Close</h3>
+                        <div>
+                            <span class="price">$8.00</span>
+                            <span class="old-price text-decoration-line-through text-secondary">$12.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 my-5">
+                    <div class="product p-2">
+                        <img src="/img/product/plant_5_grande.png" alt="Ảnh 1">
                         <h3 class="">House Shape Close</h3>
                         <div>
                             <span class="price">$8.00</span>
@@ -248,20 +289,21 @@
         </div>
     </section>
 
-    
+
     <footer id="footer">
         <div class="container">
             <div class="footer_content py-5">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="d-flex navbar-brand">
-                            <img src="./img/logo/logo (1).png" alt="">
+                            <img src="/img/logo/logo (1).png" alt="">
                             <p class="brand-text mt-3">
                                 <span>Vietplant</span>
                                 <span>garden.</span>
                             </p>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, mattis consectetuer adipiscing suspendisse et justo. Praesent mattis
+                        <p>Lorem ipsum dolor sit amet, mattis consectetuer adipiscing suspendisse et justo. Praesent
+                            mattis
                             ugue.</p>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
@@ -283,18 +325,64 @@
             </div>
 
         </div>
-        
+
         <div class="footer-bottom py-3">
-                <p class="text-center text-white">Copyright © 2018 Vietplant garden. | Powered by Azolia Inc.</p>
+            <p class="text-center text-white">Copyright © 2018 Vietplant garden. | Powered by Azolia Inc.</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+    </script>
+    <script>
+        function toggleDescription() {
+            var content = document.querySelector('.description-content');
+            var title = document.querySelector('.title');
+            var icon = document.querySelector('.toggle-btn i');
+            if (content.classList.contains('show')) {
+                content.classList.remove('show');
+                title.classList.remove('active');
+                icon.classList.remove('active');
+            } else {
+                content.classList.add('show');
+                title.classList.add('active');
+                icon.classList.add('active');
+            }
+        }
+
+        function toggleDescription1() {
+            var content = document.querySelector('.description-content1');
+            var title = document.querySelector('.title1');
+            var icon = document.querySelector('.toggle-btn-1 i');
+            if (content.classList.contains('show')) {
+                content.classList.remove('show');
+                title.classList.remove('active');
+                icon.classList.remove('active');
+            } else {
+                content.classList.add('show');
+                title.classList.add('active');
+                icon.classList.add('active');
+            }
+        }
+
+        function toggleDescription2() {
+            var content = document.querySelector('.description-content2');
+            var title = document.querySelector('.title2');
+            var icon = document.querySelector('.toggle-btn-2 i');
+            if (content.classList.contains('show')) {
+                content.classList.remove('show');
+                title.classList.remove('active');
+                icon.classList.remove('active');
+            } else {
+                content.classList.add('show');
+                title.classList.add('active');
+                icon.classList.add('active');
+            }
+        }
+    </script>
 </body>
 
 </html>

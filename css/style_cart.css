@@ -1,0 +1,153 @@
+body{
+    background-color: #DDD;;
+}
+.cart-section{
+    position: relative;
+    z-index: 10;
+    background-color: #fff;
+    margin-top: -50px;
+    border-radius: 20px;
+}
+
+.cart-section img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.product-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.product-details {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.product-name {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+}
+
+.custom-number-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 80px;
+    overflow: hidden;
+}
+
+.number-input {
+    width: 30px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    user-select: none;
+}
+
+button:active {
+    background-color: #e0e0e0;
+}
+
+button.decrement {
+    border-right: 1px solid #ccc;
+}
+
+button.increment {
+    border-left: 1px solid #ccc;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #8EB63E;
+    font-weight: bold;
+}
+
+.remove-button {
+    position: absolute; /* Định vị nút ở góc phải */
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #c4c4c4;
+    cursor: pointer;
+}
+
+.remove-button:hover {
+    color: black;
+}
+
+.option-button{
+    width: 100%;
+    padding: 25px 0px 25px 0px;
+    border-radius: 10px;
+    border: 2px solid #E2E2E2;
+    font-size: 24px;
+    font-weight: 600;
+    color: #4B4B4B;
+    margin-bottom: 10px;
+}
+.form-control {
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.form-label{
+    font-size: 18px;
+font-weight: 600;
+}
+.check-out-btn{
+    border-radius: 40px;
+background: #80B435;
+width: 340px;
+height: 80px;
+font-size: 24px;
+font-weight: 600;
+color: #FFF;
+}
+.button-container { 
+    display: flex; 
+    justify-content: center; /* Horizontal centering */ 
+}
+.icon-container{
+    color: #9B9B9B;
+font-size: 24px;
+font-weight: 400;
+}
+@media (max-width: 575.98px) {
+    .term-container{
+        justify-content: center;
+    }
+    .icon-container{
+        justify-content: center;
+    }
+}

@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+.about {
+    position: relative;
+    z-index: 10;
+    margin-top: -40px;
+    border-radius: 20px;
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.1);
+    background-image: url(/img/about-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.about img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.about .img-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 10px;
+}
+.img-content-2 {
+    box-shadow: 0px 1px 1px 0px rgba(10, 16, 34, 0.20);
+    border-radius: 10px;
+    background: #FFF;
+}
+
+#about  .fs-2 {
+    color: #80B435;
+    font-family: dosis;
+}
+
+.fs-1 {
+    color: #222;
+    font-family: Dosis;
+    font-weight: 600;
+}
+.fs-3, p {
+    font-family: dosis;
+}
+
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info {
+    flex: 1;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.description {
+    font-size: 14px;
+    margin: 5px 0 0;
+    color: #666;
+}
+
+
+
+
+.logo-swiper {
+    width: 70%;
+    height: 100px;
+    padding: 20px 0; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.logo-swiper .swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-swiper .swiper-slide img {
+    width: 160px;
+    height: 80px; 
+    object-fit: contain;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.logo-swiper .swiper-button-prev,
+.logo-swiper .swiper-button-next {
+    position: absolute;
+    top: 37%; 
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px rgba(34, 34, 34, 0.15);
+    color: #4B4B4B;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-swiper .swiper-button-prev {
+    left: 30px; 
+}
+
+.logo-swiper .swiper-button-next {
+    right: 30px; 
+}
+
+.logo-swiper .swiper-button-prev::after,
+.logo-swiper .swiper-button-next::after {
+    font-size: 16px; 
+}
+
+
+
+
+
+.customer{
+    position: relative;
+    z-index: 10;
+    margin-top: -40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.1);
+}
+#banner-swiper {
+    width: 100vw;
+    height: 704px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: -5%;
+  }
+  
+  #banner-swiper .banner-swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #banner-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    background-image: url(/img/about-banner.png);
+    background-repeat: no-repeat;
+    color: #fff;
+  }
+  
+  /* Thiết kế nội dung testimonial */
+  #banner-swiper .testimonial {
+    padding: 100px;
+  }
+  
+  #banner-swiper .testimonial p {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  #banner-swiper.testimonial h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  #banner-swiper.testimonial span {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  /* Navigation buttons */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Responsive thiết kế */
+  @media (max-width: 768px) {
+    #banner-swiper .testimonial {
+      padding: 20px;
+      font-size: 16px;
+    }
+    #banner-swiper .testimonial p {
+      font-size: 16px;
+    }
+    #banner-swiper .testimonial {
+        padding: 100px;
+      }
+   
+  }
+  

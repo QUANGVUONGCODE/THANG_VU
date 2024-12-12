@@ -1,9 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.fs-1,
+.fs-2,
+.fs-3,
+.fs-4,
+.fs-5,
+.fs-6 {
+    font-family: dosis;
 }
 
 body {
@@ -258,66 +267,30 @@ h6 {
 
     #banner-next .content-banner {
         margin-top: 20px;
-        width: 60%;
+        width: 80%;
     }
 
     #banner-next .content-banner h2 {
-        font-size: 14px;
+        font-size: 36px;
+
     }
 }
 
-.carousel-inner {
-    height: 100%;
-    /* Đảm bảo carousel chiếm toàn bộ chiều cao của phần tử cha */
-}
 
-.carousel-item {
-    height: 100%;
-    /* Đảm bảo mỗi item trong carousel chiếm toàn bộ chiều cao */
-}
-
-.carousel-item img {
-    width: 100%;
-    height: 100%;
-    /* Đảm bảo ảnh chiếm toàn bộ chiều cao */
-    object-fit: cover;
-    /* Giúp ảnh phủ toàn bộ diện tích mà không bị biến dạng */
-}
 
 .banner-content {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
     color: white;
     z-index: 1;
     text-align: left;
-    background-color: transparent;
-    padding: 20px;
-    border-radius: 10px;
 }
 
-.icon-social {
-    position: absolute;
-    bottom: 150px;
-    /* Đặt cách dưới banner 20px */
-    left: 150px;
-    /* Đặt cách phải 20px */
-    z-index: 15;
-    /* Hiển thị trên ảnh */
-    color: white;
-    font-size: 24px;
-}
 
-.icon-social i {
-    transition: 0.3s ease;
-    cursor: pointer;
-}
 
-.icon-social i:hover {
-    color: #80B435;
-    /* Màu thay đổi khi hover */
-}
+
 
 .price {
     color: #80B435;
@@ -327,88 +300,178 @@ h6 {
     height: 100vh;
 }
 
-#carouselBanner {
+/* Swiper Container */
+#banner .swiper-container {
+    position: absolute;
     width: 100%;
-    height: auto;
+    height: 100%;
+    background-image: url(/img/banner/banner1.jpg);
+    background-size: cover;
+}
+
+/* Swiper Slide */
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
 
-.carousel-inner .carousel-item img {
+.swiper-slide img {
     width: 100%;
-    height: 850px;
-    /* Đảm bảo ảnh cao bằng chiều cao màn hình */
+    height: 100%;
     object-fit: cover;
-    /* Ảnh sẽ cắt đều để vừa khít */
 }
 
-/* Đảm bảo carousel-indicators cùng độ cao */
-.carousel-indicators {
-    bottom: 140px;
-    /* Điều chỉnh cùng độ cao với các nút điều khiển */
-
+/* Banner Content */
+.banner-content {
+    position: absolute;
+    z-index: 10;
+    color: white;
+    text-align: start;
 }
 
-.carousel-indicators button {
-    width: 5px !important;
-    height: 5px !important;
-    border-radius: 50%;
-    /* Làm cho các button có hình tròn */
-    background-color: #bbb;
-    /* Màu nền mặc định */
-    border: none;
-    transition: background-color 0.3s, transform 0.3s;
-    /* Thêm hiệu ứng chuyển màu nền và hiệu ứng phóng to */
-}
-
-
-/* Thay đổi màu sắc cho button đang hoạt động (active) */
-.carousel-indicators .active {
-    background-color: #dfaa23;
-    /* Màu nền cho button hiện tại */
-}
-
-
-.banner-content p {
-    font-size: 18px;
-    margin-bottom: 10px;
+.banner-content p:first-of-type {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
 }
 
 .banner-content h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
-.banner-content .price {
+.banner-content p:last-of-type {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+}
+.banner-content .text-decoration-line-through {
+    color: #9B9B9B;
+}
+
+
+
+#banner .swiper-controls .swiper-button-prev,
+#banner .swiper-controls .swiper-button-next,
+#banner .swiper-pagination {
+    position: absolute;
+    top: 80%;
     color: #80B435;
-    /* Màu giá mới */
 }
 
-.btn-primary {
-    background-color: #80B435;
-    /* Màu nút */
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    transition: 0.3s ease;
+#banner .swiper-pagination-bullet {
+    background-color: #C4C4C4;
 }
 
-.btn-primary:hover {
-    background-color: #66a12e;
-    color: #FFF;
+#banner .swiper-pagination-bullet-active {
+    background-color: #8EB63E !important;
+}
+
+@media (min-width: 991px) {
+    #banner .swiper-controls .swiper-button-prev {
+        left: 80%;
+    }
+
+    #banner .swiper-controls .swiper-button-next {
+        right: 10%;
+    }
+
+    #banner .swiper-controls .swiper-button-prev::after,
+    #banner .swiper-controls .swiper-button-next::after {
+        border-radius: 10px;
+        background-color: #C4C4C4;
+        padding: 25px;
+        font-size: 16px;
+        height: auto;
+        width: auto;
+        color: #9B9B9B;
+        transition: all 0.3s ease;
+        /* Smooth transition for hover effect */
+    }
+
+    #banner .swiper-controls .swiper-button-prev:hover::after,
+    #banner .swiper-controls .swiper-button-next:hover::after {
+        background-color: #8EB63E;
+        color: #FFFFFF;
+        transform: scale(1.1);
+        box-shadow: 0px 4px 10px rgba(3, 230, 90, 0.2);
+    }
+
+    .icon-container1 {
+        position: absolute;
+        top: 80%;
+        color: #fff;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #banner {
+        height: 547.031px;
+    }
+
+    .banner-content {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        z-index: 1;
+        text-align: center;
+        background-color: transparent;
+        padding: 20px;
+    }
+
+    .banner-content h1 {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    .banner-content p:first-of-type {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    .banner-content .price {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    .banner-content .text-decoration-line-through {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    #banner .swiper-controls .swiper-button-prev,
+    #banner .swiper-controls .swiper-button-next,
+    #banner .swiper-pagination {
+        position: absolute;
+        top: 70%;
+        color: #80B435;
+    }
+
 }
 
 
 #News .news {
     position: relative;
     margin-top: -60px;
+    border-radius: 10px;
     /* Đẩy lên trên, đè lên section #banner */
     z-index: 10;
     /* Đảm bảo phần này nằm trên #banner */
     background-color: white;
     /* Đặt màu nền để nhìn rõ */
-    border-top-left-radius: 20px;
     /* Bo góc nếu muốn */
-    border-top-right-radius: 20px;
     box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.1);
     /* Tạo hiệu ứng nổi */
     padding: 20px;
@@ -473,18 +536,21 @@ h6 {
 }
 
 #banner-next {
+    width: 100vw;
     position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: -10%;
+    margin-bottom: -10%;
+    height: 523px;
+
 }
 
-#banner-next img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
 
 .content-banner {
     position: relative;
-    width: 30%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -492,27 +558,18 @@ h6 {
 
 #banner-next .content-banner {
     position: absolute;
-    /* Định vị nội dung dựa trên `#banner-next` */
     top: 50%;
-    /* Đặt nội dung ở giữa theo chiều dọc */
     left: 50%;
-    /* Đặt nội dung ở giữa theo chiều ngang */
     transform: translate(-50%, -50%);
-    /* Căn chỉnh chính xác giữa */
     color: white;
-    /* Màu chữ trắng để dễ đọc */
     background: transparent;
-    /* Nền mờ để tăng độ tương phản */
     padding: 20px;
-    border-radius: 10px;
-    /* Bo tròn góc nếu muốn */
 }
 
 .banner-next_2 {
     position: relative;
     z-index: 1;
     margin-top: -40px;
-    /* Để Section 2 đè lên */
 }
 
 
@@ -536,11 +593,8 @@ h6 {
 }
 
 
-#News .news .shipping-row{
-    
-}
 
-.icon-user{
+.icon-user {
     background-color: #C4C4C480;
     border-radius: 50%;
     padding: 10px;
@@ -549,36 +603,43 @@ h6 {
 
 
 .icon-text {
-    display: flex; /* Đặt container con hiển thị dạng flexbox */
+    display: flex;
 }
 
 .icon-text i {
-    font-size: 18px; /* Tùy chỉnh kích thước icon */
+    font-size: 18px;
+    /* Tùy chỉnh kích thước icon */
 }
 
 .icon-text span {
     display: flex;
-    flex-direction: column; /* Căn text thành 2 dòng theo chiều dọc */
+    flex-direction: column;
+    /* Căn text thành 2 dòng theo chiều dọc */
 }
 
 .icon-text span h4,
 .icon-text span p {
-    margin: 0; /* Bỏ khoảng cách mặc định của thẻ */
+    margin: 0;
+    /* Bỏ khoảng cách mặc định của thẻ */
     color: #000;
 }
-.icon-text span h4{
+
+.icon-text span h4 {
     font-size: 14px;
-    
+
 }
-.icon-text span p{
+
+.icon-text span p {
     font-size: 12px;
 }
-.icon-user{
+
+.icon-user {
     position: relative;
     width: 45px;
     height: 45px;
 }
-.icon-user i{
+
+.icon-user i {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -588,21 +649,21 @@ h6 {
 
 
 
-#Services .services_content{
+#Services .services_content {
     position: relative;
     z-index: 10;
     margin-top: -40px;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    
+
 }
 
 
 
 
-#Services .services_content img{
+#Services .services_content img {
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -610,18 +671,18 @@ h6 {
 
 
 
-.mail{
+.mail {
     padding: 10px;
     border: none;
     border-bottom: 1px solid #C4C4C4;
 }
 
-.mail:focus{
+.mail:focus {
     outline: none;
     color: #000;
 }
 
-.btn-2{
+.btn-2 {
     margin-top: 30px;
     border-radius: 20px;
     background-color: white;
@@ -630,12 +691,12 @@ h6 {
     width: 140px;
 }
 
-.btn-2:hover{
+.btn-2:hover {
     background-color: #80B435;
     color: white;
 }
 
-#footer{
+#footer {
     position: relative;
     z-index: 1;
     margin-top: -40px;
@@ -643,15 +704,21 @@ h6 {
 }
 
 
-#footer .container{
+#footer .container {
     background-color: #222222;
     color: white;
 }
 
-.footer-bottom{
+.footer-bottom {
     border-top: 1px solid #C4C4C4;
 }
 
-#banner-detail{
+#banner-detail {
     height: 150px;
+}
+
+.active-page {
+    color: #8EB63E;
+    font-size: 24px;
+    font-weight: 500;
 }

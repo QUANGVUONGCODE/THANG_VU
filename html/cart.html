@@ -13,19 +13,18 @@
         integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style1.css">
-    <link rel="stylesheet" href="style_store.css">
-    <link rel="stylesheet" href="style_detail.css">
-    <link rel="stylesheet" href="style_news.css">
-    <link rel="stylesheet" href="style_cart.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style1.css">
+    <link rel="stylesheet" href="/css/style_store.css">
+    <link rel="stylesheet" href="/css/style_detail.css">
+    <link rel="stylesheet" href="/css/style_cart.css">
 </head>
 
-<body>
+<body style="font-family: dosis;">
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="home.html">
-                <img src="./img/logo/logo.png" alt="Logo">
+                <img src="/img/logo/logo.png" alt="Logo">
                 <div class="brand-text">
                     <span class="name">Vietplant</span>
                     <span class="slogan">garden.</span>
@@ -44,7 +43,7 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pages</a>
+                        <a class="nav-link" href="page.html">Pages</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="news.html">News</a>
@@ -53,18 +52,18 @@
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <button href="cart.html" class=" btn-cart">
+                        <button onclick="window.location.href = 'cart.html';" class=" btn-cart">
                             Cart<span>(2)</span>
                         </button>
-                        <sup><img src="./img/sup/Ellipse.png" alt="" class="sup"></sup>
+                        <sup><img src="/img/sup/Ellipse.png" alt="" class="sup"></sup>
                     </li>
                     <li class="nav-item dropdown navbar-icon">
                         <i class="fa-solid fa-ellipsis-vertical dropdown-toggle" data-bs-toggle="dropdown"
                             aria-expanded="false">
                         </i>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item p-2" href="#">My Account</a></li>
-                            <li><a class="dropdown-item p-2" href="#">Wishlist</a></li>
+                            <li><a class="dropdown-item p-2" href="account.html">My Account</a></li>
+                            <li><a class="dropdown-item p-2" href="wishlist.html">Wishlist</a></li>
                             <li><a class="dropdown-item p-2" href="#">Log Out</a></li>
                         </ul>
                     </li>
@@ -75,7 +74,7 @@
 
     <section id="banner1">
         <div class="banner-1">
-            <img src="./img/banner/header-contactus-page.png" alt="Ảnh banner">
+            <img src="/img/banner/header-contactus-page.png" alt="Ảnh banner">
             <div class="container banner-content-1">
                 <p class="text-uppercase">Shopping Cart</p>
             </div>
@@ -89,39 +88,39 @@
                 <div class="col-md-8">
                     <h2>Shopping Cart</h2>
                     <div class="product-item">
-                        <img src="./img/product/plant_3_grande.png" alt="Howua Forstenbana" class="product-image">
+                        <img src="/img/product/plant_3_grande.png" alt="Howua Forstenbana" class="product-image">
                         <div class="product-details">
                             <h2 class="product-name">Howua Forstenbana</h2>
-                            <div class="quantity mt-5">
-                                <button onclick="decreaseQuantity()"><i class="fa-solid fa-caret-down"></i></button>
-                                <input type="number" id="quantity" value="1" min="1">
-                                <button onclick="increaseQuantity()"><i class="fa-solid fa-caret-up"></i></button>
+                            <div class="custom-number-input">
+                                <button class="decrement"><i class="fa-solid fa-caret-down"></i></button>
+                                <input type="text" value="1" class="number-input" />
+                                <button class="increment"><i class="fa-solid fa-caret-up"></i></button>
                             </div>
                         </div>
-                        <span class="product-price">$100.00</span>
+                        <span class="product-price total-price" data-price="100">$100.00</span>
                         <button class="remove-button" onclick="removeItem()">&#10005;</button>
                     </div>
                     <div class="product-item">
-                        <img src="./img/product/plant_3_grande.png" alt="Howua Forstenbana" class="product-image">
+                        <img src="/img/product/plant_3_grande.png" alt="Howua Forstenbana" class="product-image">
                         <div class="product-details">
                             <h2 class="product-name">Howua Forstenbana</h2>
-                            <div class="quantity mt-5">
-                                <button onclick="decreaseQuantity()"><i class="fa-solid fa-caret-down"></i></button>
-                                <input type="number" id="quantity" value="1" min="1">
-                                <button onclick="increaseQuantity()"><i class="fa-solid fa-caret-up"></i></button>
+                            <div class="custom-number-input">
+                                <button class="decrement"><i class="fa-solid fa-caret-down"></i></button>
+                                <input type="text" value="1" class="number-input" />
+                                <button class="increment"><i class="fa-solid fa-caret-up"></i></button>
                             </div>
                         </div>
-                        <span class="product-price">$100.00</span>
+                        <span class="product-price total-price" data-price="100">$100.00</span>
                         <button class="remove-button" onclick="removeItem()">&#10005;</button>
                     </div>
                     <hr class="hr-2">
 
                     <div class="row ">
                         <div class="col-md-6">
-                            <button class="btn-7 mt-4">Continue Shopping</button>
+                            <button class="option-button mt-4">Continue Shopping</button>
                         </div>
                         <div class="col-md-6">
-                            <button class="btn-7 mt-4 ">Update Cart</button>
+                            <button class="option-button mt-4 ">Update Cart</button>
                         </div>
                     </div>
                 </div>
@@ -136,12 +135,42 @@
                         <div>
                             Subtotal
                         </div>
-                        <div>
-                            $200.00
+                        <div class="Subtotal-price">
+                            $0.00
                         </div>
                     </div>
                     <hr class="hr-2">
-                    <button onclick="window.location.href='check_out.html';" class="btn-7">Proceed to Checkout</button>
+                    <div class="button-container">
+                        <button  onclick="window.location.href='check_out.html';" class="check-out-btn  ">Proceed to Checkout</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr-2">
+            <div class="row  ">
+                <div class="col-lg-8 col-md-12 col-sm-12 d-flex flex-row flex-wrap  term-container">
+                    <p class=" mx-4">
+                        Gift Center
+                    </p>
+                    <p class=" mx-4">
+                        FAQ
+                    </p>
+                    <p class=" mx-4">
+                        Terms of Use
+                    </p>
+                    <p class=" mx-4">
+                        Privacy Policy
+                    </p>
+                    <p class=" mx-4">
+                        Buying Guides
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-12 col-sm-12  offset-lg-2 ">
+                    <div class="d-flex flex-row flex-wrap icon-container ">
+                        <i class="fa-brands fa-square-twitter mx-2"></i>
+                        <i class="fa-brands fa-square-pinterest mx-2"></i>
+                        <i class="fa-brands fa-square-google-plus mx-2"></i>
+                        <i class="fa-brands fa-square-facebook mx-2"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -153,7 +182,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="d-flex navbar-brand">
-                            <img src="./img/logo/logo (1).png" alt="">
+                            <img src="/img/logo/logo (1).png" alt="">
                             <p class="brand-text mt-3">
                                 <span>Vietplant</span>
                                 <span>garden.</span>
@@ -194,22 +223,8 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
 
-    <script>
-        function increaseQuantity() {
-            let quantityInput = document.getElementById("quantity");
-            quantityInput.value = parseInt(quantityInput.value) + 1;
-        }
-
-        function decreaseQuantity() {
-            let quantityInput = document.getElementById("quantity");
-            if (parseInt(quantityInput.value) > 1) {
-                quantityInput.value = parseInt(quantityInput.value) - 1;
-            }
-        }
-
-        function removeItem() {
-            alert("Product removed!");
-        }
+    <script src="/js/cart.js">
+        
     </script>
 </body>
 

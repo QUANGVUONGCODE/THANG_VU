@@ -1,0 +1,111 @@
+.Blog-title h1{
+    font-size: 64px;
+    font-weight: 600;
+    color: #000;
+}
+.Blog-title p{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.page-section-1 .content .title{
+    font-size: 24px;
+    font-weight: 400;
+}
+.content .content-container p{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+}
+.img-sub-text{
+    font-size: 14px;
+    font-weight: 400;
+}
+.icon{
+    color: #222;
+    font-size: 24px;
+    font-weight: 400;
+}
+.avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+background: #C4C4C4;
+box-shadow: 0px 4px 12px 0px rgba(34, 34, 34, 0.15);
+}
+.role h1{
+    font-size: 24px;
+    font-weight: 500;
+}
+.role p{
+    font-size: 18px;
+}
+.form form select{
+    border: 0px;
+    font-size: 18px;
+    color: #4B4B4B;
+}
+.interact p{
+    font-size: 18px;
+    color: #4B4B4B;
+    font-weight: 400;
+}
+.interact .icon{
+    color: rgba(206, 41, 41, 0.84);
+}
+.interact i{
+    margin-right: 10px;
+}
+.interact .Recommend{
+    border-top: 6px solid #8EB63E;
+}
+.interact .Share{
+    border-top: 6px solid transparent;
+}
+.form-container .avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background: #C4C4C4;
+}
+form {
+    display: flex;
+    width: 100%; 
+}
+
+form input[type="text"] {
+    width: 100%; 
+    padding: 0.5rem 1rem; 
+    font-size: 18px;
+    border: 1px solid #d6d6d6; 
+    border-radius: 10px;
+    outline: none; 
+    transition: border-color 0.3s ease; 
+}
+
+/* Hiệu ứng hover/focus */
+form input[type="text"]:focus {
+    border-color: #6db443; 
+    box-shadow: 0 0 5px rgba(109, 180, 67, 0.5); 
+}
+.log-with p{
+    font-size: 18px;
+    color: #4B4B4B;
+    font-weight: 500;
+}
+.log-with i{
+    font-size: 24px;
+    color: #4B4B4B;
+    font-weight: 400;
+}
+.Sign-up p{
+    font-size: 18px;
+    color: #4B4B4B;
+    font-weight: 500;
+}
+@media screen and (max-width: 768px){
+    .page-section-1 .content .title{
+        font-size: 18px;
+        font-weight: 500;
+    }
+}

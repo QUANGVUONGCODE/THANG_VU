@@ -13,18 +13,17 @@
         integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style1.css">
-    <link rel="stylesheet" href="style_store.css">
-    <link rel="stylesheet" href="style_detail.css">
-    <link rel="stylesheet" href="style_news.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style1.css">
+    <link rel="stylesheet" href="/css/style_store.css">
+    <link rel="stylesheet" href="/css/style_news.css">
 </head>
 
-<body>
+<body style="font-family: dosis;">
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="home.html">
-                <img src="./img/logo/logo.png" alt="Logo">
+                <img src="/img/logo/logo.png" alt="Logo">
                 <div class="brand-text">
                     <span class="name">Vietplant</span>
                     <span class="slogan">garden.</span>
@@ -43,7 +42,7 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pages</a>
+                        <a class="nav-link" href="page.html">Pages</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="news.html">News</a>
@@ -55,7 +54,7 @@
                         <button onclick="window.location.href = 'cart.html';" class=" btn-cart">
                             Cart<span>(2)</span>
                         </button>
-                        <sup><img src="./img/sup/Ellipse.png" alt="" class="sup"></sup>
+                        <sup><img src="/img/sup/Ellipse.png" alt="" class="sup"></sup>
                     </li>
                     <li class="nav-item dropdown navbar-icon">
                         <i class="fa-solid fa-ellipsis-vertical dropdown-toggle" data-bs-toggle="dropdown"
@@ -74,57 +73,57 @@
 
     <section id="banner1">
         <div class="banner-1">
-            <img src="./img/banner/header-contactus-page.png" alt="Ảnh banner">
+            <img src="/img/banner/header-contactus-page.png" alt="Ảnh banner">
             <div class="container banner-content-1">
-                <p>News</p>
+                <p >News</p>
             </div>
         </div>
     </section>
 
     <section id="news-1">
         <div class="container my-5 news-section-1">
-            <h4>Home/News</h4>
+            <h4>Home/ <span class="active-page">News</span></h4>
             <div class="row align-items-center my-3">
                 <div class="col-auto">
                     <h2>Popular</h2>
                 </div>
-                <div class="col-auto ms-auto">
+                <div class="col-auto ms-auto text-secondary">
                     <p>View All</p>
                 </div>
             </div>
-            <div class="row g-3">
-                <div class="col-lg-6 col-md-6 col-sm-12 position-relative">
-                    <img src="./img/anh_content/amh9.jpg" alt="" class="img-fluid">
-                    <div class="img-content">
-                        <p>BY JONH SOMEONE <span class="p-5">IN CATEGORY</span></p>
+            <div class="row ">
+                <div class="col-lg-6 col-md-12 col-sm-12 position-relative banner">
+                    <img src="/img/anh_content/amh9.jpg" alt="" class="img-fluid">
+                    <div class="img-content p-5 text-start ">
+                        <p class="fs-6"><span class="text-secondary">BY</span> JONH SOMEONE <span class="m-4"><span class="text-secondary">IN</span> CATEGORY</span></p>
                         <h4 class="fs-2">Creat A Stunning Workspace For Your Inspiration</h4>
-                        <p>Lorem ipsum dolor sit amet, mattis consectetuer adipiscing suspendisse et justo.</p>
+                        <p class="fs-3">Lorem ipsum dolor sit amet, mattis consectetuer adipiscing suspendisse et justo.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="row g-3">
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="news-content p-3">
-                                <p>WEB DESIGN</p>
-                                <h3>Designers will rule the web</h3>
+                                <p class="fs-6">WEB DESIGN</p>
+                                <h3 class="fs-2">Designers will rule the web</h3>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="news-content p-3">
-                                <p>WEB DESIGN</p>
-                                <h3>Designers will rule the web</h3>
+                                <p class="fs-6">WEB DESIGN</p>
+                                <h3 class="fs-2">Designers will rule the web</h3>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="news-content p-3">
-                                <p>WEB DESIGN</p>
-                                <h3>Designers will rule the web</h3>
+                                <p class="fs-6">WEB DESIGN</p>
+                                <h3 class="fs-2">Designers will rule the web</h3>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="news-content p-3">
-                                <p>WEB DESIGN</p>
-                                <h3>Designers will rule the web</h3>
+                                <p class="fs-6">WEB DESIGN</p>
+                                <h3 class="fs-2">Designers will rule the web</h3>
                             </div>
                         </div>
                     </div>
@@ -134,20 +133,26 @@
         </div>
     </section>
 
-    <section id="news-2" class="py-5">
+    <section id="news-2" class="my-5">
         <div class="container">
-            <h2>Ramdom</h2>
-            <div class="row g-0 custom-row my-3">
+            <h2 class="fs-1">Random</h2>
+            <div class="row g-0 custom-row my-3 ">
                 <div class="col-lg-6 col-md-6 col-sm-12 first">
                     <div class="news-content-2 p-5">
-                        <p>BY JONH SOMEONE <span class="p-5">IN CATEGORY</span></p>
+                        <p>
+                            <span class="text-secondary">BY</span> 
+                            JONH SOMEONE 
+                            <span class="m-4 ">
+                                <span class="text-secondary">IN</span> 
+                                CATEGORY
+                            </span>
+                        </p>
                         <h4 class="fs-2">Creat A Stunning Workspace For Your Inspiration</h4>
                         <p>Lorem ipsum dolor sit amet, mattis consectetuer adipiscing suspendisse et justo.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 second">
-                    <img src="./img/anh_content/28751627_849050175280789_4757665102050623488_n.png" alt=""
-                        class="img-fluid">
+                    <img src="/img/anh_content/11.png" alt="">
                 </div>
             </div>
         </div>
@@ -156,64 +161,71 @@
 
     <section id="news-3" class="my-5">
         <div class="container">
-            <h2>New</h2>
+            <div class="row align-items-center my-3">
+                <div class="col-auto">
+                    <h2>New</h2>
+                </div>
+                <div class="col-auto ms-auto text-secondary">
+                    <p>View All</p>
+                </div>
+            </div>
             <div class="row g-3">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <img src="./img/anh_content/28429313_264114384126917_5639652974339817472_n.png" alt=""
+                    <img src="/img/anh_content/28429313_264114384126917_5639652974339817472_n.png" alt=""
                         class="img-fluid ">
                     <div class="news-content-3 p-2 mt-3">
-                        <p>BY JONH SOMEONE <span class="p-5">IN CATEGORY</span></p>
-                        <h4 class="fs-2">18 title heading design blog trend for 2018</h4>
+                        <p><span class="text-secondary">BY</span> JONH SOMEONE <span class="p-5"><span class="text-secondary">IN</span> CATEGORY</span></p>
+                        <h4>18 title heading design blog trend for 2018</h4>
                         <p>Lorem ipsum dolor sit amet, mattis consectetuer adipiscing but also the leap into electronic
                         </p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <img src="./img/anh_content/28429313_264114384126917_5639652974339817472_n.png" alt=""
-                        class="img-fluid">
+                    <img src="/img/anh_content/2.png" alt=""
+                        class="img-fluid ">
                     <div class="news-content-3 p-2 mt-3">
-                        <p>BY JONH SOMEONE <span class="p-5">IN CATEGORY</span></p>
-                        <h4 class="fs-2">18 title heading design blog trend for 2018</h4>
+                        <p><span class="text-secondary">BY</span> JONH SOMEONE <span class="p-5"><span class="text-secondary">IN</span> CATEGORY</span></p>
+                        <h4 >18 title heading design blog trend for 2018</h4>
+                        <p >Lorem ipsum dolor sit amet, mattis consectetuer adipiscing but also the leap into electronic
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img src="/img/anh_content/3.png" alt=""
+                        class="img-fluid ">
+                    <div class="news-content-3 p-2 mt-3">
+                        <p><span class="text-secondary">BY</span> JONH SOMEONE <span class="p-5"><span class="text-secondary">IN</span> CATEGORY</span></p>
+                        <h4 >18 title heading design blog trend for 2018</h4>
                         <p>Lorem ipsum dolor sit amet, mattis consectetuer adipiscing but also the leap into electronic
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
-                    <img src="./img/anh_content/28429313_264114384126917_5639652974339817472_n.png" alt=""
-                        class="img-fluid mt-5">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img src="/img/anh_content/4.png" alt=""
+                        class="img-fluid ">
                     <div class="news-content-3 p-2 mt-3">
-                        <p>BY JONH SOMEONE <span class="p-5">IN CATEGORY</span></p>
-                        <h4 class="fs-2">18 title heading design blog trend for 2018</h4>
+                        <p><span class="text-secondary">BY</span> JONH SOMEONE <span class="p-5"><span class="text-secondary">IN</span> CATEGORY</span></p>
+                        <h4 >18 title heading design blog trend for 2018</h4>
                         <p>Lorem ipsum dolor sit amet, mattis consectetuer adipiscing but also the leap into electronic
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
-                    <img src="./img/anh_content/28429313_264114384126917_5639652974339817472_n.png" alt=""
-                        class="img-fluid mt-5">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img src="/img/anh_content/5.png" alt=""
+                        class="img-fluid ">
                     <div class="news-content-3 p-2 mt-3">
-                        <p>BY JONH SOMEONE <span class="p-5">IN CATEGORY</span></p>
-                        <h4 class="fs-2">18 title heading design blog trend for 2018</h4>
+                        <p><span class="text-secondary">BY</span> JONH SOMEONE <span class="p-5"><span class="text-secondary">IN</span> CATEGORY</span></p>
+                        <h4 >18 title heading design blog trend for 2018</h4>
                         <p>Lorem ipsum dolor sit amet, mattis consectetuer adipiscing but also the leap into electronic
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
-                    <img src="./img/anh_content/28429313_264114384126917_5639652974339817472_n.png" alt=""
-                        class="img-fluid mt-5">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img src="/img/anh_content/6.png" alt=""
+                        class="img-fluid ">
                     <div class="news-content-3 p-2 mt-3">
-                        <p>BY JONH SOMEONE <span class="p-5">IN CATEGORY</span></p>
-                        <h4 class="fs-2">18 title heading design blog trend for 2018</h4>
-                        <p>Lorem ipsum dolor sit amet, mattis consectetuer adipiscing but also the leap into electronic
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
-                    <img src="./img/anh_content/28429313_264114384126917_5639652974339817472_n.png" alt=""
-                        class="img-fluid mt-5">
-                    <div class="news-content-3 p-2 mt-3">
-                        <p>BY JONH SOMEONE <span class="p-5">IN CATEGORY</span></p>
-                        <h4 class="fs-2">18 title heading design blog trend for 2018</h4>
+                        <p><span class="text-secondary">BY</span> JONH SOMEONE <span class="p-5"><span class="text-secondary">IN</span> CATEGORY</span></p>
+                        <h4 >18 title heading design blog trend for 2018</h4>
                         <p>Lorem ipsum dolor sit amet, mattis consectetuer adipiscing but also the leap into electronic
                         </p>
                     </div>

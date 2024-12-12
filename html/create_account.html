@@ -12,21 +12,15 @@
         integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style1.css">
-    <link rel="stylesheet" href="style_store.css">
-    <link rel="stylesheet" href="style_detail.css">
-    <link rel="stylesheet" href="style_news.css">
-    <link rel="stylesheet" href="style_contact.css">
-    <link rel="stylesheet" href="style_checkout.css">
-    <link rel="stylesheet" href="style_cart.css">
-    <link rel="stylesheet" href="style_account.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style_store.css">
+    <link rel="stylesheet" href="/css/style_account.css">
 </head>
-<body>
+<body style="font-family: dosis;">
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="home.html">
-                <img src="./img/logo/logo.png" alt="Logo">
+                <img src="/img/logo/logo.png" alt="Logo">
                 <div class="brand-text">
                     <span class="name">Vietplant</span>
                     <span class="slogan">garden.</span>
@@ -45,19 +39,19 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pages</a>
+                        <a class="nav-link" href="page.html">Pages</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="news.html">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <button href="" class=" btn-cart">
+                        <button onclick="window.location.href = 'cart.html';" class=" btn-cart">
                             Cart<span>(2)</span>
                         </button>
-                        <sup><img src="./img/sup/Ellipse.png" alt="" class="sup"></sup>
+                        <sup><img src="/img/sup/Ellipse.png" alt="" class="sup"></sup>
                     </li>
                     <li class="nav-item dropdown navbar-icon">
                         <i class="fa-solid fa-ellipsis-vertical dropdown-toggle" data-bs-toggle="dropdown"
@@ -76,7 +70,7 @@
 
     <section id="banner1">
         <div class="banner-1">
-            <img src="./img/banner/header-contactus-page.png" alt="Ảnh banner">
+            <img src="/img/banner/header-contactus-page.png" alt="Ảnh banner">
             <div class="container banner-content-1">
                 <p class="text-uppercase">create account</p>
             </div>
@@ -86,20 +80,47 @@
 
     <section id="login">
         <div class="container login py-5">
-            <p class="">Home/ <span class="fs-4">Account</span></p>
-            <div class="d-flex justify-content-center align-items-center">
-                    <div>
-                        <h4 class="text-center">Create Account</h4>
+            <p class="">Home/ <span class="active-page">Account</span></p>
+            <div class="d-flex justify-content-center align-items-center row">
+                    <div class="col-lg-4 col-md-8 col-sm-12 ">
+                        <h4 class="text-start">Create Account</h4>
                         <hr class="hr-2">
-                        <p class="text-center">Create you own Vietplant account</p>
-                        <div>
+                        <p class="text-start">Create you own Vietplant account</p>
+                        <div class="">
                             <input type="text" placeholder="First Name" class="form-control mb-3">
                             <input type="text" placeholder="Last Name" class="form-control mb-3">
                             <input type="text" placeholder="Email" class="form-control mb-3">
                             <input type="password" placeholder="Password" class="form-control mb-3">
                         </div>
                         <button class="btn btn-primary w-100">Sign In</button>
-                        <p class="text-center mt-3">Already have an account? <a href="account.html" class="text-decoration-none">Sign In</a></p>
+                        <p class="text-center mt-3">Already have an account? <a style="color: #8EB63E;" href="account.html" class="text-decoration-none">Sign In</a></p>
+                    </div>
+                </div>
+                <div class="row  border-top pt-3 mt-3">
+                    <div class="col-lg-8 col-md-12 col-sm-12 d-flex flex-row flex-wrap  term-container">
+                        <p class=" mx-4">
+                            Gift Center
+                        </p>
+                        <p class=" mx-4">
+                            FAQ
+                        </p>
+                        <p class=" mx-4">
+                            Terms of Use
+                        </p>
+                        <p class=" mx-4">
+                            Privacy Policy
+                        </p>
+                        <p class=" mx-4">
+                            Buying Guides
+                        </p>
+                    </div>
+                    <div class="col-lg-2 col-md-12 col-sm-12  offset-lg-2 ">
+                        <div class="d-flex flex-row flex-wrap icon-container ">
+                            <i class="fa-brands fa-square-twitter mx-2"></i>
+                            <i class="fa-brands fa-square-pinterest mx-2"></i>
+                            <i class="fa-brands fa-square-google-plus mx-2"></i>
+                            <i class="fa-brands fa-square-facebook mx-2"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -113,7 +134,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="d-flex navbar-brand">
-                            <img src="./img/logo/logo (1).png" alt="">
+                            <img src="/img/logo/logo (1).png" alt="">
                             <p class="brand-text mt-3">
                                 <span>Vietplant</span>
                                 <span>garden.</span>

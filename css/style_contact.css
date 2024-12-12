@@ -1,3 +1,6 @@
+body{
+    background-color: #ddd;
+}
 .contact-1{
     position: relative;
     background-color: #ffffff;
@@ -23,7 +26,7 @@
 }
 
 .contact-section .form-control{
-    background-color: #c4c4c4;
+    background-color: rgba(196, 196, 196, 0.20);
 }
 
 .contact-section ::placeholder{
